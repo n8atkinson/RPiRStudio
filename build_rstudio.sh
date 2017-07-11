@@ -33,12 +33,12 @@ sudo apt-get install -y pandoc
 sudo apt-get install -y libcurl4-openssl-dev
 
 cd ~/Downloads/rstudio-$VERS/dependencies/common/
-#./install-common
+./install-common # removed comment
 ./install-gwt
 ./install-dictionaries
 ./install-mathjax
 ./install-boost
-#./install-pandoc
+./install-pandoc # removed comment
 ./install-libclang
 ./install-packages
 
@@ -74,7 +74,7 @@ export LANGUAGE=en_US.UTF-8
 #echo 'export LANGUAGE=en_US.UTF-8' >> ~/.bashrc
 
 # Clean the system of packages used for building
-# sudo apt-get autoremove -y cabal-install ghc openjdk-7-jdk pandoc libboost-all-dev
+sudo apt-get autoremove -y cabal-install ghc openjdk-7-jdk pandoc libboost-all-dev
 sudo rm -r -f ~/Downloads/rstudio-$VERS
 sudo apt-get autoremove -y
 
