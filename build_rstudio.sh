@@ -6,6 +6,10 @@
 
 # chmod +x
 
+sudo /etc/init.d/dphys-swapfile stop
+sudo nano /etc/dphys-swapfile 
+sudo /etc/init.d/dphys-swapfile start
+
 # Install R; Debian stretch has latest version
 sudo apt-get update
 sudo apt-get install -y r-base r-base-dev r-base-core r-recommended python-dev 
@@ -82,3 +86,7 @@ sudo apt-get autoremove -y
 sudo rstudio-server start
 
 # Go to localhost:8787
+
+sudo /etc/init.d/dphys-swapfile stop
+sudo nano /etc/dphys-swapfile 
+sudo /etc/init.d/dphys-swapfile start
