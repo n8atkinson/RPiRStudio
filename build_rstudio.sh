@@ -4,6 +4,8 @@
 # https://github.com/jrowen/ARM-rstudio-server
 # http://herb.h.kobe-u.ac.jp/raspiinfo/rstudio_en.html
 
+# This version: https://github.com/n8atkinson/RPiRStudio/blob/master/build_rstudio.sh
+
 # chmod +x
 
 sudo /etc/init.d/dphys-swapfile stop
