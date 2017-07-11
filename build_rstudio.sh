@@ -8,7 +8,6 @@
 
 # Install R; Debian stretch has latest version
 sudo apt-get update
-sudo apt-get dist-upgrade -y
 sudo apt-get install -y r-base r-base-dev r-base-core r-recommended python-dev 
 
 # Set RStudio version
