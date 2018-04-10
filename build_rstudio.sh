@@ -17,7 +17,8 @@ sudo apt-get update
 sudo apt-get install -y r-base r-base-dev r-base-core r-recommended python-dev 
 
 # Set RStudio version
-VERS=v0.99.473
+VERS=v1.1.442
+# VETS=v0.99.473
 # VERS=v1.0.143
 
 # Download RStudio source
