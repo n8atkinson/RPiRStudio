@@ -17,8 +17,8 @@ sudo apt-get update
 sudo apt-get install -y r-base r-base-dev r-base-core r-recommended python-dev 
 
 # Set RStudio version
-VERS=v1.1.442
-# VETS=v0.99.473
+# VERS=v1.1.442
+VERS=v0.99.473
 # VERS=v1.0.143
 
 # Download RStudio source
@@ -29,7 +29,7 @@ tar xvf ~/Downloads/$VERS -C ~/Downloads/rstudio-$VERS --strip-components 1
 rm ~/Downloads/$VERS
 
 # Run environment preparation scripts
-sudo apt-get install -y openjdk-7-jdk
+sudo apt-get install -y openjdk-7-jdk # E: Package 'openjdk-7-jdk' has no installation candidate
 cd ~/Downloads/rstudio-$VERS/dependencies/linux/
 ./install-dependencies-debian --exclude-qt-sdk
 
