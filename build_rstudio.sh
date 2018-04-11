@@ -29,7 +29,8 @@ tar xvf ~/Downloads/$VERS -C ~/Downloads/rstudio-$VERS --strip-components 1
 rm ~/Downloads/$VERS
 
 # Run environment preparation scripts
-sudo apt-get install -y openjdk-7-jdk # E: Package 'openjdk-7-jdk' has no installation candidate
+# sudo apt-get install -y openjdk-7-jdk # E: Package 'openjdk-7-jdk' has no installation candidate
+sudo apt-get install -y openjdk-9-jdk
 cd ~/Downloads/rstudio-$VERS/dependencies/linux/
 ./install-dependencies-debian --exclude-qt-sdk
 
